@@ -1,0 +1,73 @@
+Welcome to Maze Runner, your final project.
+This project will rely on the skills you've learned throughout
+the course and
+expect you to use an imported file to create a game.
+So let's get started.
+The first thing you want to do is define your MazeRunner class.
+In this class, we will need to call our maze, and
+we'll begin with our first method.
+Let's call this method intro.
+Within intro, you will need to print the map and
+greet the user.
+Next, we will create userMove.
+This method will be returning a string indicating
+which direction the user chooses to move.
+Ask the user which direction they would like to move, and
+continuously prompt the user to select a valid direction.
+If the input is not R, L, U or D.
+Next, we will need to check if the direction the user chose is
+clear, or if there is an obstacle in the way.
+To do that, we will be using mymap.canimove and
+fill in the direction.
+This will check if the way is clear and return true if so and
+false if the path is blocked.
+If it returns false, tell them they have hit a wall and
+ask them for a new direction.
+If it returns true,
+then we will need to actually move the muser into that spot.
+In order to do that, we'll be using myMap.Move and
+then fill in the direction again.
+Go ahead and print out the map again so
+the user can see the updated move.
+Repeat this using while loop until myMap.didIWin returns
+true.
+When it does, congratulate the user on winning.
+Now that the basis for Maze Runner is complete,
+we'll have a few things to add on.
+Let's start with the move limiter.
+This will challenge the user to complete the maze within 100
+moves or close the program.
+We will want to give the user a heads up when they're reaching
+the limit, so let's create a method to do that.
+MovesMessage, which takes in the number of moves the user has
+made as a parameter.
+Will print the following statements as the user hits
+certain milestones within the move count.
+After 100 moves, if the user has not completed the maze,
+tell them that they are out of moves and close the program.
+If the user completes the game within 100 moves,
+add the number of moves it took to the congratulatory statement.
+In order to do this, movesMessage will need to return
+the number of moves, so keep that in mind.
+All right, so Maze Runner is looking pretty good.
+Time to add in one last obstacle, hits.
+Let's name this method navigatePit.
+When the user runs into an obstacle,
+this method will be checking if it's a wall or a hit.
+Using the line,
+myMap.IsThereAPit will do the trick.
+The statement will return false if it's a wall, and
+true if it's a pit.
+If it turns out to actually be a pit,
+you'll want to give the user an option to jump over the pit.
+If the user decides to jump over,
+myMap.JumpOverPit will move the character over the pit.
+If the user decides not to jump over, close the program and
+tell them they have lost.
+Now you might have noticed we're missing a pretty big piece of
+the program, the maze itself.
+The maze is already coded for you,
+so all you have to do is import it.
+Download it using the link attached and
+make sure to save it within the file that your code is saved.
+Import the
